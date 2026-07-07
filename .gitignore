@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 .pytest_cache/
 data/raw/
-data/interim/
+data/interim/*
+!data/interim/relab_group_map.csv
 data/final/
 ingest_*.log
