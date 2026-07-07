@@ -38,8 +38,9 @@ publishes only derived tables.
 | A3 | Asteroid families | Nesvorný HCM PDS4 V2.0 (doi:10.26033/5hyq-6k90) | done |
 | A4 | Diameters & albedos | AKARI AcuA 1.0 (DARTS) + IRAS SIMPS V6.0 (doi:10.26033/pf3k-m168) | done |
 | A5 | Ground-truth spectra | SMASSII (doi:10.26033/fj1d-vb37) + MITHNEOS (doi:10.26033/1aft-4018) + ECAS (doi:10.26033/dhpe-7k98) | done |
-| A6 | Phase curves | GAPC (HG parameters) | planned |
-| A7 | Taxonomy | Bus–DeMeo / SDSS / Gaia | planned |
+| A5b | Taxonomy labels | PDS Asteroid Taxonomy V1.1 (doi:10.26033/e1p3-xm59) | done |
+| A6 | Risk data | NHATS + NEOCC | planned |
+| A7 | Lab spectra | RELAB | planned |
 | A8 | Binaries, pairs & satellites | Johnston / literature | planned |
 | A9 | Accessibility & close approaches | NHATS / CNEOS | planned |
 

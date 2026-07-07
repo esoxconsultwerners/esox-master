@@ -1,0 +1,25 @@
+{
+  "source": "Asteroid Taxonomy V1.1, PDS4 bundle (PDS3 lineage EAR-A-5-DDR-TAXONOMY-V6.0)",
+  "url": "https://sbnarchive.psi.edu/pds4/non_mission/ast_taxonomy_v1.1.zip",
+  "urn": "urn:nasa:pds:ast_taxonomy::1.1",
+  "version": "1.0",
+  "doi": "10.26033/e1p3-xm59",
+  "date": "2026-07-07",
+  "sha256": "69b521b08fa5f7c7ce6a97c27deb99427dc526b048e99846cc26f32b139aa1b3",
+  "row_count": 5568,
+  "distinct_objects": 2615,
+  "per_system_counts": {
+    "bus": 1447,
+    "tholen": 985,
+    "s3os2_th": 820,
+    "s3os2_bb": 817,
+    "barucci": 438,
+    "bus_demeo": 371,
+    "tedesco": 357,
+    "smass": 221,
+    "howell": 112
+  },
+  "wide_view_rule": "one row per object in source, no dedup needed; taxon_s3os2 in the wide view = Bus-like variant (S3OS2_CLASS_BB); Tholen-like variant kept in the long table as s3os2_th",
+  "citation": "Neese, C. (Ed.), Asteroid Taxonomy V6.0, EAR-A-5-DDR-TAXONOMY-V6.0, NASA Planetary Data System (2010); PDS4 migration V1.1 (2017), urn:nasa:pds:ast_taxonomy::1.1, doi:10.26033/e1p3-xm59, retrieved 2026-07-07",
+  "license_note": "NASA PDS open data; cite the bundle DOI when redistributing derived tables."
+}
