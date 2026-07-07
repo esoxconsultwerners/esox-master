@@ -35,15 +35,15 @@ publishes only derived tables.
 |---|---------|-----------|--------|
 | A1 | Orbit backbone | MPC MPCORB extended + JPL SBDB | done |
 | A2 | Rotation periods | LCDB (PDS4 bundle V4.0, doi:10.26033/j3xc-3359) | done |
-| A3 | Diameters & albedos | NEOWISE / AKARI / IRAS | planned |
-| A4 | Taxonomy | Bus–DeMeo / SDSS / Gaia | planned |
-| A5 | Reflectance spectra | GASP (Gaia DR3) | planned |
+| A3 | Asteroid families | Nesvorný HCM PDS4 V2.0 (doi:10.26033/5hyq-6k90) | done |
+| A4 | Diameters & albedos | AKARI / IRAS (SIMPS) | planned |
+| A5 | Reflectance spectra | SMASS / MITHNEOS + ECAS | planned |
 | A6 | Phase curves | GAPC (HG parameters) | planned |
-| A7 | Families & proper elements | AstDyS / Nesvorný | planned |
+| A7 | Taxonomy | Bus–DeMeo / SDSS / Gaia | planned |
 | A8 | Binaries, pairs & satellites | Johnston / literature | planned |
 | A9 | Accessibility & close approaches | NHATS / CNEOS | planned |
 
-(A2–A9 names are the current roadmap and may be refined per package.)
+(Planned names are the current roadmap and may be refined per package.)
 
 ## Layout
 

@@ -1,0 +1,17 @@
+{
+  "source": "Nesvorny HCM Asteroid Families, PDS4 bundle V2.0, NASA PDS Small Bodies Node",
+  "url": "https://sbnarchive.psi.edu/pds4/non_mission/ast.nesvorny.families_V2_0.zip",
+  "resource_page": "https://sbn.psi.edu/pds/resource/nesvornyfam.html",
+  "urn": "urn:nasa:pds:ast.nesvorny.families::2.0",
+  "version": "2.0",
+  "doi": "10.26033/5hyq-6k90",
+  "date": "2026-07-07",
+  "sha256": "4adf5a341eaea3f1fb209ccb4c875188f224a65b5f260d1d99e10be28f1b3145",
+  "row_count": 170981,
+  "families_2015_members": 143711,
+  "families_2024_members": 27270,
+  "distinct_families": 272,
+  "fam_id_note": "2015 families keep their HCM FAMILY_NUMBER; 2024 families (no id in product) use 1000000 + parent asteroid number, unnumbered parents get sequential ids from 1900000",
+  "citation": "Nesvorny, D., Broz, M., Carruba, V. (2015), Identification and Dynamical Properties of Asteroid Families, Asteroids IV, Univ. of Arizona Press; via Nesvorny, D. (2024), Nesvorny HCM Asteroid Families V2.0, urn:nasa:pds:ast.nesvorny.families::2.0, NASA Planetary Data System, doi:10.26033/5hyq-6k90, retrieved 2026-07-07",
+  "license_note": "NASA PDS open data; cite the bundle DOI when redistributing derived tables."
+}
