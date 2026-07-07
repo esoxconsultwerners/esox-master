@@ -1,0 +1,11 @@
+{
+  "source": "IAU Minor Planet Center, Extended Orbit File (MPCORB)",
+  "url": "https://minorplanetcenter.net/Extended_Files/mpcorb_extended.json.gz",
+  "date": "2026-07-07",
+  "file": "data/raw/mpcorb_extended_20260707.json.gz",
+  "sha256": "5d4ce1943c37518ae88f8be93e3bf0e95de74719de89db03aa71a7447b6b1436",
+  "size_bytes": 180506652,
+  "row_count": 1552834,
+  "citation": "IAU Minor Planet Center, MPCORB extended file, retrieved 2026-07-07",
+  "license_note": "MPC data policy applies to raw redistribution; raw file is cached locally only and the project publishes only derived tables."
+}

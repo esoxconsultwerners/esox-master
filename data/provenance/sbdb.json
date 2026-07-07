@@ -1,0 +1,15 @@
+{
+  "source": "JPL Small-Body Database Query API",
+  "url": "https://ssd-api.jpl.nasa.gov/sbdb_query.api",
+  "date": "2026-07-07",
+  "params": {
+    "fields": "spkid,full_name,pdes,neo,pha,H,diameter,albedo,class,e,a,q,i,om,w,ma,ad,per_y,moid,moid_jup,t_jup,condition_code,n_obs_used,first_obs,last_obs",
+    "sb-ns": "n",
+    "sb-kind": "a"
+  },
+  "file": "data/raw/sbdb/sbdb_numbered_20260707.json",
+  "sha256": "2dfaefe1286717e266d4673722469b83ef983f90fa192f78bf6f4bd4deb4211e",
+  "row_count": 895910,
+  "citation": "JPL Small-Body Database, NASA/JPL-Caltech Solar System Dynamics, retrieved 2026-07-07",
+  "license_note": "NASA/JPL data, publicly available; cached raw responses kept locally."
+}
