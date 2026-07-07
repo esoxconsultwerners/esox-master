@@ -34,7 +34,7 @@ publishes only derived tables.
 | # | Package | Source(s) | Status |
 |---|---------|-----------|--------|
 | A1 | Orbit backbone | MPC MPCORB extended + JPL SBDB | done |
-| A2 | Rotation periods | LCDB | planned |
+| A2 | Rotation periods | LCDB (PDS4 bundle V4.0, doi:10.26033/j3xc-3359) | done |
 | A3 | Diameters & albedos | NEOWISE / AKARI / IRAS | planned |
 | A4 | Taxonomy | Bus–DeMeo / SDSS / Gaia | planned |
 | A5 | Reflectance spectra | GASP (Gaia DR3) | planned |

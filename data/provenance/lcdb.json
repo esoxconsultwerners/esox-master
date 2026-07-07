@@ -1,0 +1,16 @@
+{
+  "source": "Asteroid Lightcurve Database (LCDB), PDS4 bundle V4.0, NASA PDS Small Bodies Node",
+  "url": "https://sbnarchive.psi.edu/pds4/non_mission/ast-lightcurve-database_V4_0/data/lc_summary.csv",
+  "label_url": "https://sbnarchive.psi.edu/pds4/non_mission/ast-lightcurve-database_V4_0/data/lc_summary.xml",
+  "resource_page": "https://sbn.psi.edu/pds/resource/lc.html",
+  "version": "4.0",
+  "pds_urn": "urn:nasa:pds:ast-lightcurve-database::4.0",
+  "doi": "10.26033/j3xc-3359",
+  "date": "2026-07-07",
+  "sha256": "b5fb23ed3ee92a6bc6652dfc766ac628f785ecf7ca29ad1071180d399ae5ce91",
+  "label_sha256": "d77bc70d4be36e555f53010e81bfbb3a8ef3bfeb8a016548c523ca90a8a23eec",
+  "row_count": 34967,
+  "rows_with_period": 33475,
+  "citation": "Warner, B.D., Harris, A.W., Pravec, P., Icarus 202, 134-146 (2009); updated PDS4 bundle V4.0 (data through 2021-09-02), urn:nasa:pds:ast-lightcurve-database::4.0, doi:10.26033/j3xc-3359, retrieved 2026-07-07",
+  "license_note": "NASA PDS open data; cite the bundle DOI when redistributing derived tables."
+}
