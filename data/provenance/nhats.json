@@ -1,0 +1,16 @@
+{
+  "source": "NASA/JPL NHATS Data API (summary mode)",
+  "url": "https://ssd-api.jpl.nasa.gov/nhats.api",
+  "api_signature": {
+    "version": "1.3",
+    "source": "NASA/JPL NHATS Data API"
+  },
+  "default_filters": "dv<=12 km/s, duration<=450 d, stay>=8 d, launch window 2020-2045, no H filter, no OCC filter",
+  "next_window_note": "API provides next observation window (obs_start/obs_end), not a launch window; kept as nhats_obs_start/nhats_obs_end",
+  "date": "2026-07-07",
+  "retrieved_utc": "2026-07-07T14:47:45Z",
+  "note": "living list - the retrieval datetime is the version",
+  "sha256": "75623c80c7cc20d0cc5c735ccb1319ea2a302bf13f88d71fb23775ab1bc1e928",
+  "row_count": 6983,
+  "citation": "NASA/JPL Near-Earth Object Human Space Flight Accessible Targets Study (NHATS), https://ssd-api.jpl.nasa.gov/nhats.api, retrieved 2026-07-07T14:47:45Z"
+}

@@ -1,0 +1,15 @@
+{
+  "source": "NASA/JPL Sentry Impact Monitoring API (summary mode)",
+  "url": "https://ssd-api.jpl.nasa.gov/sentry.api",
+  "api_signature": {
+    "version": "2.0",
+    "source": "NASA/JPL Sentry Data API"
+  },
+  "scope_note": "cross-reference only: monitoring results ingested as columns, impact probabilities never computed by us",
+  "date": "2026-07-07",
+  "retrieved_utc": "2026-07-07T14:47:45Z",
+  "note": "living list - the retrieval datetime is the version",
+  "sha256": "88df6154201bd4b970eca165d020eb2b317b4894340cb4bb490d2f61a79ef9bd",
+  "row_count": 2163,
+  "citation": "NASA/JPL Center for NEO Studies Sentry impact monitoring, https://ssd-api.jpl.nasa.gov/sentry.api, retrieved 2026-07-07T14:47:45Z"
+}
