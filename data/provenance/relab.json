@@ -1,0 +1,23 @@
+{
+  "source": "RELAB Spectral Library, PDS4 bundle at the PDS Geosciences Node",
+  "source_note": "legacy Brown RelabDB zip no longer distributed; PDS4 bundle is the primary and only bulk source. Metadata extracted from per-product PDS4 labels (no monolithic catalog exists in the bundle); grain size and meteorite class parsed from specimen name/description text with documented rules (no structured fields available).",
+  "url": "https://pds-geosciences.wustl.edu/speclib/urn-nasa-pds-relab/",
+  "urn": "urn:nasa:pds:relab",
+  "version": "3.0",
+  "date": "2026-07-07",
+  "manifest_sha256": "08839accffe7c68542cfb01a55632e7b80a32569af7ac1fb7146988005ceb188",
+  "labels_crawled": 23606,
+  "row_count": 1701,
+  "spectra_points": 671231,
+  "funnel": {
+    "all_reflectance_products": 23606,
+    "meteorite": 4521,
+    "reflectance_measurement": 4520,
+    "gaia_range_040_100um": 2635,
+    "grain_or_texture_documented": 1704,
+    "qa_reflectance_excluded": 3,
+    "kept": 1701
+  },
+  "citation": "Pieters, C.M., Hiroi, T. (2004), RELAB (Reflectance Experiment Laboratory): A NASA Multiuser Spectroscopy Facility, LPSC XXXV, #1720; Milliken, R. et al., RELAB Spectral Library Bundle urn:nasa:pds:relab V3.0, PDS Geosciences Node; PDS Spectral Library: doi:10.3847/PSJ/ad5af7; retrieved 2026-07-07",
+  "license_terms": "NASA PDS open data (publicly released, no access restrictions). RELAB is a NASA-supported multiuser facility; publications using these data customarily acknowledge the RELAB facility at Brown University and cite Pieters & Hiroi (2004) and the PDS Spectral Library."
+}

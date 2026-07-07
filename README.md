@@ -40,7 +40,7 @@ publishes only derived tables.
 | A5 | Ground-truth spectra | SMASSII (doi:10.26033/fj1d-vb37) + MITHNEOS (doi:10.26033/1aft-4018) + ECAS (doi:10.26033/dhpe-7k98) | done |
 | A5b | Taxonomy labels | PDS Asteroid Taxonomy V1.1 (doi:10.26033/e1p3-xm59) | done |
 | A6 | Accessibility & risk | JPL NHATS + ESA NEOCC risk list + JPL Sentry (living lists, retrieval date = version) | done |
-| A7 | Lab spectra | RELAB | planned |
+| A7 | Lab spectra (reference set) | RELAB PDS4 bundle (urn:nasa:pds:relab, PDS Geosciences Node) — never merged with the asteroid catalog | done |
 | A8 | Binaries, pairs & satellites | Johnston / literature | planned |
 | A9 | Accessibility & close approaches | NHATS / CNEOS | planned |
 
