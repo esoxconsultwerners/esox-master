@@ -1,0 +1,14 @@
+{
+  "source": "Supplemental IRAS Minor Planet Survey (SIMPS), DIAMALB product",
+  "url": "https://sbnarchive.psi.edu/pds3/iras/IRAS_A_FPA_3_RDR_IMPS_V6_0/data/diamalb.tab",
+  "label_url": "https://sbnarchive.psi.edu/pds3/iras/IRAS_A_FPA_3_RDR_IMPS_V6_0/data/diamalb.lbl",
+  "dataset_id": "IRAS-A-FPA-3-RDR-IMPS-V6.0",
+  "version": "V6.0",
+  "doi": "10.26033/pf3k-m168",
+  "date": "2026-07-07",
+  "sha256": "a911b99df39467f8a192d392b837db5a4ba269afaf7775543f09de57e2044386",
+  "label_sha256": "592377cf0fec5e08bb726c7b5560920835f254dd1e5b1848c5f5a8d3e1a00c64",
+  "row_count": 2228,
+  "citation": "Tedesco, E.F., Noah, P.V., Noah, M., Price, S.D. (2002), The Supplemental IRAS Minor Planet Survey, AJ 123, 1056-1085; IRAS-A-FPA-3-RDR-IMPS-V6.0, NASA Planetary Data System, 2004, doi:10.26033/pf3k-m168, retrieved 2026-07-07",
+  "license_note": "NASA PDS open data; cite the dataset DOI when redistributing derived tables."
+}

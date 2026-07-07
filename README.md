@@ -36,7 +36,7 @@ publishes only derived tables.
 | A1 | Orbit backbone | MPC MPCORB extended + JPL SBDB | done |
 | A2 | Rotation periods | LCDB (PDS4 bundle V4.0, doi:10.26033/j3xc-3359) | done |
 | A3 | Asteroid families | Nesvorný HCM PDS4 V2.0 (doi:10.26033/5hyq-6k90) | done |
-| A4 | Diameters & albedos | AKARI / IRAS (SIMPS) | planned |
+| A4 | Diameters & albedos | AKARI AcuA 1.0 (DARTS) + IRAS SIMPS V6.0 (doi:10.26033/pf3k-m168) | done |
 | A5 | Reflectance spectra | SMASS / MITHNEOS + ECAS | planned |
 | A6 | Phase curves | GAPC (HG parameters) | planned |
 | A7 | Taxonomy | Bus–DeMeo / SDSS / Gaia | planned |

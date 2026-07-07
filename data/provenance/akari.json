@@ -1,0 +1,14 @@
+{
+  "source": "AKARI Asteroid Catalog (AcuA) V1.0, AKARI/IRC Mid-Infrared All-Sky Survey",
+  "source_used": "JAXA DARTS (primary distribution)",
+  "url": "https://data.darts.isas.jaxa.jp/pub/akari/AKARI-IRC_Catalogue_AllSky_AcuA_1.0/AcuA_V1.txt.gz",
+  "readme_url": "https://data.darts.isas.jaxa.jp/pub/akari/AKARI-IRC_Catalogue_AllSky_AcuA_1.0/ReadMe.AcuA.txt",
+  "version": "AcuA 1.0",
+  "bibcode": "2011PASJ...63.1117U",
+  "date": "2026-07-07",
+  "sha256": "e1b162580f362800d82502225b7eeba3db413221945f50e31938bf1f092cfa51",
+  "readme_sha256": "f590ff9ac6c386f00b9cbb1bc7980c28a5d3bbe44adb4776246201e95f39d057",
+  "row_count": 5120,
+  "citation": "Usui, F., et al. (2011), Asteroid Catalog Using AKARI: AKARI/IRC Mid-Infrared Asteroid Survey, PASJ 63, 1117-1138; AcuA V1.0 via JAXA DARTS, retrieved 2026-07-07",
+  "license_note": "JAXA/ISAS DARTS public archive data."
+}
