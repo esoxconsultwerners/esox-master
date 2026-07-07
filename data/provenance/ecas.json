@@ -1,0 +1,14 @@
+{
+  "source": "PDS4 bundle urn:nasa:pds:gbo.ast.ecas.phot::1.0",
+  "url": "https://sbnarchive.psi.edu/pds4/non_mission/gbo.ast.ecas.phot.zip",
+  "urn": "urn:nasa:pds:gbo.ast.ecas.phot::1.0",
+  "version": "1.0",
+  "doi": "10.26033/dhpe-7k98",
+  "date": "2026-07-07",
+  "sha256": "65c48543282388527b3da06ca46b05dd336d7251e56e3a758c95bc9e61d394b4",
+  "row_count": 589,
+  "spectra_points": null,
+  "taxonomy_note": "bundle distributes no per-object taxonomic classes; gt_taxon left null (classes live in the separate PDS Asteroid Taxonomy dataset)",
+  "citation": "Zellner, B., Tholen, D.J., Tedesco, E.F. (1985), The Eight-Color Asteroid Survey: Results for 589 minor planets, Icarus 61, 355-416; PDS4 bundle urn:nasa:pds:gbo.ast.ecas.phot::1.0, NASA Planetary Data System (2020), doi:10.26033/dhpe-7k98, retrieved 2026-07-07",
+  "license_note": "NASA PDS open data; cite the bundle DOI when redistributing derived tables."
+}

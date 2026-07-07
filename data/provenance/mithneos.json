@@ -1,0 +1,14 @@
+{
+  "source": "PDS4 bundle urn:nasa:pds:gbo.mithneos.spectra_2000-2021::1.0",
+  "url": "https://sbnarchive.psi.edu/pds4/non_mission/gbo.ast.mithneos.spectra_2000-2021_V1_0.zip",
+  "urn": "urn:nasa:pds:gbo.mithneos.spectra_2000-2021::1.0",
+  "version": "1.0",
+  "doi": "10.26033/1aft-4018",
+  "date": "2026-07-07",
+  "sha256": "9925bff4dbe814d2f72cef442ed450a14fa2ebd54d48a0db2aec42a37506898f",
+  "row_count": 668,
+  "spectra_points": 245686,
+  "taxonomy_note": "bundle distributes no per-object taxonomic classes; gt_taxon left null (classes live in the separate PDS Asteroid Taxonomy dataset)",
+  "citation": "Binzel, R.P., et al. (2019), Compositional distributions and evolutionary processes for the near-Earth object population, Icarus 324, 41-76; Marsset, M., et al. (2022), AJ 163, 165; MITHNEOS IRTF Spectra of Asteroids from 2000 to 2021 Bundle V1.0, urn:nasa:pds:gbo.mithneos.spectra_2000-2021::1.0, NASA Planetary Data System (2023), doi:10.26033/1aft-4018, retrieved 2026-07-07",
+  "license_note": "NASA PDS open data; cite the bundle DOI when redistributing derived tables."
+}

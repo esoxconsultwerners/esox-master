@@ -1,0 +1,14 @@
+{
+  "source": "PDS4 bundle urn:nasa:pds:gbo.ast.smass2.spectra::1.0",
+  "url": "https://sbnarchive.psi.edu/pds4/non_mission/gbo.ast.smass2.spectra.zip",
+  "urn": "urn:nasa:pds:gbo.ast.smass2.spectra::1.0",
+  "version": "1.0",
+  "doi": "10.26033/fj1d-vb37",
+  "date": "2026-07-07",
+  "sha256": "a22cb93f5472ed9bbc0af607f18ff47c6012740661a35aa199936c9e6a716ad7",
+  "row_count": 1341,
+  "spectra_points": 252836,
+  "taxonomy_note": "bundle distributes no per-object taxonomic classes; gt_taxon left null (classes live in the separate PDS Asteroid Taxonomy dataset)",
+  "citation": "Bus, S.J., Binzel, R.P. (2002), Phase II of the Small Main-Belt Asteroid Spectroscopic Survey: The Observations, Icarus 158, 106-145; PDS4 bundle urn:nasa:pds:gbo.ast.smass2.spectra::1.0, NASA Planetary Data System (2020), doi:10.26033/fj1d-vb37, retrieved 2026-07-07",
+  "license_note": "NASA PDS open data; cite the bundle DOI when redistributing derived tables."
+}
