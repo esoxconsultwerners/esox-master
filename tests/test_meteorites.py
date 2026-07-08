@@ -26,6 +26,9 @@ CANONICAL_GROUPS = {
     "diogenite", "aubrite", "ureilite", "angrite", "brachinite", "winonaite",
     "lodranite-acapulcoite", "iron", "mesosiderite", "pallasite",
     "lunar-meteorite", "martian",
+    # soft-label groups for genuine ordinary-chondrite intermediates
+    # (e.g. the L/LL5 falls Golden and Dingle Dell); see group-map fix.
+    "L-LL", "H-L", "H-LL",
 }
 
 

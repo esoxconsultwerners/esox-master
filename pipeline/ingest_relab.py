@@ -72,7 +72,7 @@ GROUP_RULES = [
     (r"^LL\d(\.\d)?$", "LL"), (r"^LL$", "LL"),
     (r"^L\d(\.\d)?$", "L"), (r"^L$", "L"),
     (r"^H\d(\.\d)?$", "H"), (r"^H$", "H"),
-    (r"^L/LL\d?$", "LL"), (r"^H/L\d?$", "L"),
+    (r"^L/LL\d?$", "L-LL"), (r"^H/L\d?$", "H-L"),
     (r"^EH\d?$", "EH"), (r"^EL\d?$", "EL"), (r"^E\d?$", "E"),
     (r"^R\d(\.\d)?$", "R"), (r"^R$", "R"),
     (r"^HOWARDITE$", "howardite"), (r"^EUCRITE$", "eucrite"),

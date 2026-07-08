@@ -38,6 +38,17 @@ INTERIM = ROOT / "data" / "interim"
 PROV = ROOT / "data" / "provenance"
 GROUP_MAP = INTERIM / "relab_group_map.csv"
 
+SOFT_GROUPS = {"H-L", "L-LL", "H-LL"}
+COARSE_GROUPS = {"C-ungrouped", "iron", "OC-ung", "E"}
+
+
+def group_kind_of(canonical):
+    if canonical in SOFT_GROUPS:
+        return "soft"
+    if canonical in COARSE_GROUPS:
+        return "coarse"
+    return "primary"
+
 UA = "EsoxConsult-research/1.0 (+https://esoxspace.com; vienna@esoxconsult.com)"
 BROWSER_UA = "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
 TODAY = dt.date.today().isoformat()
@@ -152,9 +163,14 @@ def classify_class(raw):
     if re.match(r"^k[0-9]", low) or low == "k" or low.startswith("kakangari"):
         return "K"
 
-    # Ordinary chondrites: combos first, then LL before L before H
-    if re.match(r"^(h/l|l/h|l/ll|ll/l|h-l|l-ll)", oc):
-        return "OC-ung"
+    # Ordinary-chondrite intermediates (H/L, L/LL, ...) become dedicated
+    # soft-label groups (H-L, L-LL) rather than being forced into a neighbour.
+    m = re.match(r"^(h|ll|l)/(h|ll|l)", oc)
+    if m and m.group(1) != m.group(2):
+        rank = {"h": 0, "l": 1, "ll": 2}
+        x, y = sorted((m.group(1), m.group(2)), key=lambda t: rank[t])
+        return f"{x.upper()}-{y.upper()}"
+    # then LL before L before H for the pure classes
     if re.match(r"^ll([0-9\-./]|$)", oc):
         return "LL"
     if re.match(r"^l([0-9\-./]|$)", oc):
@@ -191,6 +207,8 @@ def build_group_lookup(distinct_classes):
         add_df = pd.DataFrame(additions, columns=["raw", "canonical"])
         merged = pd.concat([existing, add_df], ignore_index=True)
         merged = merged.drop_duplicates(subset="raw", keep="first")
+        if "group_kind" in merged.columns:
+            merged["group_kind"] = merged["canonical"].map(group_kind_of)
         merged = merged.sort_values(["canonical", "raw"]).reset_index(drop=True)
         merged.to_csv(GROUP_MAP, index=False)
 
@@ -452,7 +470,8 @@ def coverage_report(mb, orb, cne, additions):
     falls_class = falls[falls["metbull_group"] != "unclassified"]
 
     grp_falls = falls_class["metbull_group"].value_counts()
-    oc_falls = int(falls_class["metbull_group"].isin(["H", "L", "LL", "OC-ung"]).sum())
+    oc_falls = int(falls_class["metbull_group"].isin(
+        ["H", "L", "LL", "OC-ung", "H-L", "L-LL", "H-LL"]).sum())
     ll_falls = int((falls_class["metbull_group"] == "LL").sum())
     ll_frac = 100.0 * ll_falls / len(falls_class) if len(falls_class) else 0.0
 
@@ -473,7 +492,7 @@ def coverage_report(mb, orb, cne, additions):
     print(f"Falls per major group:")
     for g, n in grp_falls.items():
         print(f"    {g:<18} {n:>4}  ({100.0*n/len(falls_class):.1f}%)")
-    print(f"    {'-- OC (H+L+LL+OC-ung)':<18} {oc_falls:>4}  "
+    print(f"    {'-- OC (H+L+LL+OC-ung+soft)':<18} {oc_falls:>4}  "
           f"({100.0*oc_falls/len(falls_class):.1f}% of classified falls)")
     print(f"Orbits table events:                 {len(orb)}, all with per-row refs "
           f"({n_ref}/{len(orb)} non-null)")

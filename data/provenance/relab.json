@@ -4,7 +4,7 @@
   "url": "https://pds-geosciences.wustl.edu/speclib/urn-nasa-pds-relab/",
   "urn": "urn:nasa:pds:relab",
   "version": "3.0",
-  "date": "2026-07-07",
+  "date": "2026-07-08",
   "manifest_sha256": "08839accffe7c68542cfb01a55632e7b80a32569af7ac1fb7146988005ceb188",
   "labels_crawled": 23606,
   "row_count": 1701,
@@ -18,6 +18,6 @@
     "qa_reflectance_excluded": 3,
     "kept": 1701
   },
-  "citation": "Pieters, C.M., Hiroi, T. (2004), RELAB (Reflectance Experiment Laboratory): A NASA Multiuser Spectroscopy Facility, LPSC XXXV, #1720; Milliken, R. et al., RELAB Spectral Library Bundle urn:nasa:pds:relab V3.0, PDS Geosciences Node; PDS Spectral Library: doi:10.3847/PSJ/ad5af7; retrieved 2026-07-07",
+  "citation": "Pieters, C.M., Hiroi, T. (2004), RELAB (Reflectance Experiment Laboratory): A NASA Multiuser Spectroscopy Facility, LPSC XXXV, #1720; Milliken, R. et al., RELAB Spectral Library Bundle urn:nasa:pds:relab V3.0, PDS Geosciences Node; PDS Spectral Library: doi:10.3847/PSJ/ad5af7; retrieved 2026-07-08",
   "license_terms": "NASA PDS open data (publicly released, no access restrictions). RELAB is a NASA-supported multiuser facility; publications using these data customarily acknowledge the RELAB facility at Brown University and cite Pieters & Hiroi (2004) and the PDS Spectral Library."
 }

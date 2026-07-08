@@ -53,8 +53,12 @@ def test_viable_groups(samples):
 
 @pytest.mark.parametrize("group", ["LL", "CM", "CV", "H", "L", "eucrite"])
 def test_key_groups_covered(samples, group):
-    n = int((samples["relab_group"] == group).sum())
-    assert n >= 5, f"group {group} has only {n} spectra"
+    # After the intermediate-class soft-label split, "LL-like coverage" means
+    # the union {LL, L-LL} (the L/LL intermediates moved to the L-LL soft
+    # group). The pure-LL count dropped from 91 to 89 but stays well above 5.
+    groups = {"LL": ["LL", "L-LL"]}.get(group, [group])
+    n = int(samples["relab_group"].isin(groups).sum())
+    assert n >= 5, f"group(s) {groups} have only {n} spectra"
 
 
 def test_value_ranges(spectra):
@@ -101,8 +105,13 @@ def test_unmapped_fraction(samples):
 def test_group_map_exists():
     assert GROUP_MAP.exists()
     gm = pd.read_csv(GROUP_MAP)
-    assert {"raw", "canonical"} <= set(gm.columns)
+    assert {"raw", "canonical", "group_kind"} <= set(gm.columns)
     assert len(gm) > 10
+    assert set(gm["group_kind"]) <= {"primary", "soft", "coarse"}, \
+        f"unexpected group_kind values: {set(gm['group_kind'])}"
+    # the intermediate soft-label groups must be present and flagged soft
+    soft = gm[gm["group_kind"] == "soft"]["canonical"].unique()
+    assert "L-LL" in soft and "H-L" in soft, f"soft groups missing: {soft}"
 
 
 def test_provenance():
