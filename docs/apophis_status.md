@@ -27,3 +27,8 @@ truth: the MITHNEOS NIR spectra are the anchor).
 
 - LL falls fraction: **8.6%** of classified MetBull falls (91/1063) are LL chondrites. This is the base rate behind the Apophis Sq<->LL story: Apophis is an Sq-type, and Sq is the spectral bridge to LL ordinary chondrites - the most probable meteorite analogue. LL is a minority of falls, so a delivered Apophis fragment would be a comparatively rare, diagnostic sample.
 - Observed-fall orbits with published references: 60 events (incl. Chelyabinsk LL5, source region traceable per row).
+
+## AP_A9 (DAMIT spin & shape, 2026-07-08)
+
+- DAMIT inversion models for Apophis: **0** (absent). This is the expected, legitimate finding: Apophis rotates in a non-principal-axis (NPA / tumbling) state, which classic convex lightcurve inversion does not model. Instead Apophis appears in the DAMIT **tumblers** table with **2 NPA solutions** (tumbler periods phi=27.38 h, psi=263.0 h). This is consistent with the A2 LCDB tumbler flag (30.56 h, U=3, tumbler) - two independent databases agree on the non-relaxed rotation state.
+- Cross-package unit check: DAMIT vs LCDB rotation periods agree to a median relative difference of 0.028% over 5582 shared asteroids (validates the hour units end-to-end).

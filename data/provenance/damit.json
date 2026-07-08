@@ -1,0 +1,37 @@
+{
+  "source": "DAMIT - Database of Asteroid Models from Inversion Techniques",
+  "institution": "Astronomical Institute, Charles University, Prague",
+  "url": "https://damit.cuni.cz/projects/damit/exports/table/<table>",
+  "landing_page": "https://damit.cuni.cz/",
+  "tables_used": [
+    "asteroids",
+    "asteroid_models",
+    "references",
+    "asteroid_models_references",
+    "tumblers",
+    "references_tumblers"
+  ],
+  "db_snapshot": "damit-20260708T000302Z",
+  "retrieval_date": "2026-07-08",
+  "sha256": {
+    "asteroids": "632fb9ada51454f1e37c6d170afce79b06031c680052f9fb6ed6cf547054fd98",
+    "asteroid_models": "f1b9f1463d4f40ed998ab9f9b11e2bcc1e2a75407e1c3c773000bb1750dc8f1f",
+    "references": "ada96ccaa0077bcd479924eae4849fa14f5b0e763de2d178b98dfcc9214e1bb8",
+    "asteroid_models_references": "ac2e12eddcd02d4965e0d8ab8779db4fccd6cba1cf93197958cd4f6e93304e92",
+    "tumblers": "5b11e4b516746bdef95061db5c7975de99d4ce746f7fd6de20ef03a89e3fe603",
+    "references_tumblers": "6aef2a7153287623cc55f2d41275a306f3d67dca463cdd6d9ff18059d5c64890"
+  },
+  "row_counts": {
+    "asteroids": 10757,
+    "asteroid_models": 16098,
+    "models_emitted": 16098,
+    "damit_best": 10753,
+    "tumblers": 6
+  },
+  "method_derivation": "DAMIT has no explicit method field. damit_method is derived: thermal_inertia present -> 'thermophysical model'; else nonconvex flag set -> 'nonconvex inversion'; else 'convex lightcurve inversion' (the default technique).",
+  "shape_note": "DAMIT models are shape models by construction, so damit_shape_available is True for every asteroid_models row (structural fact of the database, not a per-file download check).",
+  "reference_note": "damit_ref is mandatory per row. 19 models carry no reference link in the DB; those fall back to the DAMIT database citation. Ambiguous pole solutions (lambda / lambda+180) are kept as separate model rows - no de-duplication.",
+  "best_note": "damit_best is PROVISIONAL (newest reference year, tie-break newest model id) for convenience only; the scientific precedence rule is a Phase B decision.",
+  "citation": "Durech J., Sidorin V., Kaasalainen M. (2010) DAMIT: a database of asteroid models. A&A 513, A46. Individual models credited per row in damit_ref.",
+  "license_terms": "CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)"
+}
