@@ -1,0 +1,23 @@
+{
+  "source": "RELAB Spectral Library, PDS4 bundle at the PDS Geosciences Node",
+  "url": "https://pds-geosciences.wustl.edu/speclib/urn-nasa-pds-relab/",
+  "urn": "urn:nasa:pds:relab",
+  "version": "3.0",
+  "date": "2026-07-08",
+  "derived_from": "data/provenance/relab.json (same PDS4 bundle, no re-crawl)",
+  "selection": "specimen_type == 'Returned Asteroid Sample'. Returned Lunar Samples (1,510) deliberately excluded: the Moon is not an asteroid (out of scope for an asteroid space-weathering reference).",
+  "bodies_present": [
+    "Ryugu"
+  ],
+  "bodies_absent_in_bundle": [
+    "Itokawa",
+    "Bennu"
+  ],
+  "row_count": 31,
+  "spectra_points": 41203,
+  "grain_size_documented_fraction": 1.0,
+  "qa_reflectance_excluded": [],
+  "sample_note": "All returned-asteroid spectra in this bundle are Ryugu sample C0002 (Hayabusa2 / JAXA), measured at the Brown University RELAB facility (owner/requestor Ralph E. Milliken). Collection location per label e.g. 'Asteroid Ryugu SCI crater' (artificial-impact subsurface material). The PDS4 labels carry no per-sample paper DOI; sample origin traces to the Hayabusa2 return (Yada et al. 2022, Nat. Astron. 6, 214; Pilorget et al. 2022).",
+  "citation": "Pieters, C.M., Hiroi, T. (2004), RELAB (Reflectance Experiment Laboratory): A NASA Multiuser Spectroscopy Facility, LPSC XXXV, #1720; Milliken, R. et al., RELAB Spectral Library Bundle urn:nasa:pds:relab V3.0, PDS Geosciences Node; PDS Spectral Library: doi:10.3847/PSJ/ad5af7; retrieved 2026-07-07",
+  "license_terms": "NASA PDS open data (publicly released, no access restrictions). RELAB is a NASA-supported multiuser facility; publications using these data customarily acknowledge the RELAB facility at Brown University and cite Pieters & Hiroi (2004) and the PDS Spectral Library."
+}
