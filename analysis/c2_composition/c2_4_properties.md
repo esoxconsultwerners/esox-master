@@ -1,0 +1,3 @@
+# C2.4 - Physical-properties bridge (first pass)
+
+For 2,286 confident non-degenerate analogs, group-typical literature bulk properties (grain density range, porosity note) are attached from data/interim/meteorite_group_properties.csv. These are **analog-inferred, group-typical literature ranges - NOT per-object measurements**. Every property row carries a citation field; values are currently marked **TODO** for citation verification (Galinier discipline - no fabricated references; Werner fills verified sources, e.g. the meteorite density/porosity literature). Real per-object density comes later from DR4 (Stage 2).

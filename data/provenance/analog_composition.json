@@ -1,0 +1,46 @@
+{
+  "columns": [
+    "analog_group_top",
+    "analog_group_conf",
+    "analog_distribution",
+    "oc_subgroup",
+    "analog_status",
+    "weathering_strength",
+    "weathering_flag",
+    "inferred_grain_density_range",
+    "inferred_porosity_note",
+    "properties_source"
+  ],
+  "kind": "MODEL-DERIVED from RELAB meteorite templates (resampled to the 16 Gaia bands under the documented 44 nm Gaussian bandpass approximation). Distinct from measured quantities; the inferred physical properties are ANALOG-inferred group-typical literature ranges, not per-object measurements.",
+  "separable_subset": [
+    "CM",
+    "CR",
+    "CV",
+    "EH",
+    "EL",
+    "aubrite",
+    "brachinite",
+    "diogenite",
+    "eucrite",
+    "howardite",
+    "lodranite-acapulcoite",
+    "lunar-meteorite",
+    "martian",
+    "ordinary_chondrite",
+    "ureilite"
+  ],
+  "degenerate_groups": [
+    "CI",
+    "CK",
+    "CO",
+    "R",
+    "mesosiderite",
+    "pallasite"
+  ],
+  "oc_policy": "H/L/LL merged into ordinary_chondrite; oc_subgroup always 'unresolved' (C1: mutually ~0.72 AUC, not spectrally resolvable)",
+  "prior": "C4 taxon_esox complex used as prior (implausible analogs down-weighted x0.25); flat where unclassified. Mean entropy reduction 0.083",
+  "relab_self_cv_balanced_accuracy": 0.332,
+  "reliability_ece": 0.042,
+  "confidence_threshold": 0.55,
+  "resampling_note": "same 44 nm Gaussian bandpass approximation as C1/C4"
+}

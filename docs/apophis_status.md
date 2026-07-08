@@ -51,3 +51,8 @@ Via C1.4: Apophis has no Gaia spectrum, so its composition analog is recovered f
 
 
 - **taxon_esox = N/A** (C4): Apophis has no Gaia spectrum, so the model-derived complex classifier does not run for it. Its composition comes only via the external-spectrum path (C1.4). This is the correct behaviour, not a gap.
+
+## Composition analog (production)
+
+Via C2 (external-spectrum path, nir-7band): Apophis analog distribution top **ordinary_chondrite** (conf 0.56), ordinary-chondrite mass 0.56. Per C1 honesty, the ordinary-chondrite subgroup is reported **unresolved** (H/L/LL are not separable at Gaia/NIR resolution) - Apophis gets 'ordinary chondrite, subgroup unresolved', not 'LL'.
+

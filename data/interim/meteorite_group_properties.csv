@@ -1,0 +1,20 @@
+group,grain_density_min_gcc,grain_density_max_gcc,porosity_note,composition_note,citation
+ordinary_chondrite,3.2,3.8,low-moderate (~5-10%),olivine+pyroxene+FeNi metal (H/L/LL),TODO
+CM,2.2,2.9,high,"hydrated phyllosilicates, volatile-rich",TODO
+CV,3.0,3.6,moderate,"CAIs + chondrules, anhydrous",TODO
+CR,2.8,3.4,moderate-high,metal + hydrated matrix,TODO
+CO,3.0,3.6,moderate,"small chondrules, anhydrous",TODO
+CI,1.6,2.4,very high,"aqueously altered, no chondrules",TODO
+eucrite,3.0,3.4,low,basaltic HED (Vesta crust),TODO
+howardite,3.1,3.4,low,HED breccia (Vesta),TODO
+diogenite,3.2,3.5,low,orthopyroxenite HED (Vesta),TODO
+aubrite,2.9,3.2,low,"enstatite achondrite, iron-poor",TODO
+ureilite,3.1,3.4,low-moderate,olivine+pyroxene+carbon,TODO
+EH,3.5,3.7,low,"enstatite chondrite, metal-rich",TODO
+EL,3.4,3.6,low,enstatite chondrite,TODO
+brachinite,3.3,3.7,low,olivine-rich primitive achondrite,TODO
+lodranite-acapulcoite,3.2,3.6,low,"primitive achondrite, partial melt",TODO
+martian,3.0,3.4,low,SNC (basaltic/cumulate),TODO
+lunar-meteorite,2.9,3.3,low-moderate,feldspathic/basaltic breccia,TODO
+mesosiderite,4.0,5.5,low,stony-iron (silicate+metal),TODO
+pallasite,4.5,6.0,low,stony-iron (olivine+metal),TODO
