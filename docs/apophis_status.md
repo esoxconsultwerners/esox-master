@@ -45,3 +45,7 @@ The showcase record every A1-A9 layer has been building toward - (99942) Apophis
 - **Spectra (A5 + GASP):** gaia_spectrum=False; MITHNEOS NIR spectra provide the 0.77-2.49 um coverage. The laboratory analogue is the RELAB LL-chondrite set (A7).
 - **Complete physical profile:** False (a tumbler has no single period_best by design, so Apophis is intentionally not a 'complete profile' object - the flag behaves correctly).
 
+## Composition analog (external-spectrum path)
+
+Via C1.4: Apophis has no Gaia spectrum, so its composition analog is recovered from MITHNEOS NIR spectra resampled to the 7 Gaia bands >= 770 nm. Top analog **L** (p=0.23); ordinary-chondrite mass 0.54, LL p=0.18. Consistent with the literature Sq -> LL story; the external-spectrum showcase mechanism works. (Lower bound: no visible slope, no 2 um band at Gaia resolution.)
+
