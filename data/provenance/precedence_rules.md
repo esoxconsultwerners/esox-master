@@ -126,21 +126,19 @@ precedence record and is versioned in git.
 
 ## Realized outcomes
 
-*Placeholder — filled by `pipeline/build_master.py` after the merge.* The
-realized per-`*_best`-field source counts are appended here post-merge so that
-the rules and their actual effect live in one document.
+*Filled by `pipeline/build_master.py` after the merge (counts over the full catalog).*
 
 | Best field | Source | Objects (n) |
 |---|---|---|
-| `diameter_best` | AKARI | _pending_ |
-| `diameter_best` | NEOWISE | _pending_ |
-| `diameter_best` | IRAS | _pending_ |
-| `albedo_best` | AKARI | _pending_ |
-| `albedo_best` | NEOWISE | _pending_ |
-| `albedo_best` | IRAS | _pending_ |
-| `period_best` | DAMIT | _pending_ |
-| `period_best` | LCDB | _pending_ |
-| `period_best` | (tumbler, none) | _pending_ |
-| `h_best` | SBDB | _pending_ |
-| `h_best` | MPCORB | _pending_ |
-| `taxon_literature_consensus` | ≥2 systems agree | _pending_ |
+| `diameter_best` | AKARI | 5,086 |
+| `diameter_best` | NEOWISE | 130,521 |
+| `diameter_best` | IRAS | 0 |
+| `albedo_best` | AKARI | 5,086 |
+| `albedo_best` | NEOWISE | 129,600 |
+| `albedo_best` | IRAS | 0 |
+| `period_best` | DAMIT | 10,741 |
+| `period_best` | LCDB | 22,687 |
+| `period_best` | (tumbler, no best) | 148 |
+| `h_best` | SBDB | 895,910 |
+| `h_best` | MPCORB | 656,758 |
+| `taxon_literature_consensus` | >=2 systems agree | 671 |

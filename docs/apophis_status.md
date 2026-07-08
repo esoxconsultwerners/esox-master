@@ -32,3 +32,16 @@ truth: the MITHNEOS NIR spectra are the anchor).
 
 - DAMIT inversion models for Apophis: **0** (absent). This is the expected, legitimate finding: Apophis rotates in a non-principal-axis (NPA / tumbling) state, which classic convex lightcurve inversion does not model. Instead Apophis appears in the DAMIT **tumblers** table with **2 NPA solutions** (tumbler periods phi=27.38 h, psi=263.0 h). This is consistent with the A2 LCDB tumbler flag (30.56 h, U=3, tumbler) - two independent databases agree on the non-relaxed rotation state.
 - Cross-package unit check: DAMIT vs LCDB rotation periods agree to a median relative difference of 0.028% over 5582 shared asteroids (validates the hour units end-to-end).
+
+## Assembled dossier v0 (Phase B merge)
+
+The showcase record every A1-A9 layer has been building toward - (99942) Apophis, assembled from the merged master catalog:
+
+- **Orbit (A1):** a = 0.922 au, e = 0.191, i = 3.34 deg; SBDB class ATE, NEO=True, PHA=True, MOID = 0.000108 au. H = 19.1 [SBDB].
+- **Rotation (A2 + A9):** non-principal-axis **tumbler** (tumbler_flag=True) - so period_best is deliberately null (Rule 1.2). LCDB reports ~30.56 h (U=3, note 'T'); DAMIT carries the NPA solution in its tumblers table. Two independent databases agree on the non-relaxed rotation state.
+- **Size/albedo (A4/SBDB):** diameter_best = 0.34 km [NEOWISE], albedo_best = 0.35 [NEOWISE].
+- **Accessibility & risk (A6):** NHATS min dv = 6.05 km/s (2.72e+05 trajectories); NEOCC/Sentry impact probability = -/- (removed from risk lists after the 2004-2021 observation arc).
+- **Taxonomy (literature):** mahlke=-, tholen=-, bus=-, bus_demeo=-, consensus=- - S-complex / Sq, the spectral bridge to LL ordinary chondrites.
+- **Spectra (A5 + GASP):** gaia_spectrum=False; MITHNEOS NIR spectra provide the 0.77-2.49 um coverage. The laboratory analogue is the RELAB LL-chondrite set (A7).
+- **Complete physical profile:** False (a tumbler has no single period_best by design, so Apophis is intentionally not a 'complete profile' object - the flag behaves correctly).
+
