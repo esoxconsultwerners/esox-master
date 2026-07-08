@@ -49,3 +49,5 @@ The showcase record every A1-A9 layer has been building toward - (99942) Apophis
 
 Via C1.4: Apophis has no Gaia spectrum, so its composition analog is recovered from MITHNEOS NIR spectra resampled to the 7 Gaia bands >= 770 nm. Top analog **L** (p=0.23); ordinary-chondrite mass 0.54, LL p=0.18. Consistent with the literature Sq -> LL story; the external-spectrum showcase mechanism works. (Lower bound: no visible slope, no 2 um band at Gaia resolution.)
 
+
+- **taxon_esox = N/A** (C4): Apophis has no Gaia spectrum, so the model-derived complex classifier does not run for it. Its composition comes only via the external-spectrum path (C1.4). This is the correct behaviour, not a gap.

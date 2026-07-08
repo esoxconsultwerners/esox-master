@@ -1,0 +1,14 @@
+{
+  "column": "taxon_esox",
+  "kind": "MODEL-DERIVED (predicted), distinct from the literature taxon_* columns (taxon_mahlke, taxon_tholen, taxon_bus, taxon_bus_demeo, taxon_s3os2) - never conflate measured vs predicted taxonomy",
+  "granularity": "Bus-DeMeo complex level only (C/S/X/V/D/A/K-L); class-level was shown to over-claim in C1.3 (0.416 balanced acc)",
+  "model": "LogReg+isotonic + sigmoid calibration (CalibratedClassifierCV)",
+  "features": "16 Gaia bands (374-1034 nm), normalized at 550 nm; purely spectral (u/g add +0.006 only)",
+  "training_labels": "311 GASP-Mahlke objects, mapped to complex; the PDS Bus-DeMeo set is held out (leakage-free, unlike C1.3)",
+  "confidence": "calibrated; taxon_esox_conf in [0,1]; below threshold 0.544 -> 'unclassified' (honest, not a low-conf guess)",
+  "confidence_threshold": 0.543939,
+  "confident_coverage": 0.57,
+  "calibrated_balanced_accuracy_cv": 0.494,
+  "heldout_pds_agreement": 0.806,
+  "resampling_note": "same 44 nm Gaussian bandpass approximation as C1 (true Gaia passband response not in local data)"
+}
