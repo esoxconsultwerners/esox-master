@@ -5,5 +5,5 @@ __pycache__/
 data/raw/
 data/interim/*
 !data/interim/relab_group_map.csv
-data/final/
+data/final/*.parquet
 ingest_*.log
