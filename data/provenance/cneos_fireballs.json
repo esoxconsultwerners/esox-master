@@ -1,0 +1,13 @@
+{
+  "source": "CNEOS Fireball and Bolide Data (JPL/NASA)",
+  "url": "https://ssd-api.jpl.nasa.gov/fireball.api?vel-comp=true",
+  "api_note": "vel-comp=true returns velocity components vx/vy/vz where available",
+  "retrieval_date": "2026-07-08",
+  "sha256": "f6e455ad84e9e704f1f2375d2fb97925773565eae77ea8bd0f468b5379155b71",
+  "raw_file": "data/raw/cneos/fireball_2026-07-08.json",
+  "row_count": 1064,
+  "with_velocity": 359,
+  "note": "Context statistics only. energy_kt is total impact energy (kt TNT); most events lack full velocity vectors and NO orbit is derived in this package. Living list: retrieval date = version (Phase-D diff).",
+  "citation": "NASA/JPL Center for Near-Earth Object Studies (CNEOS) fireball data.",
+  "license_terms": "NASA/JPL public data."
+}

@@ -1,0 +1,1338 @@
+{
+  "source": "Meteoritical Bulletin Database (via NASA Open Data fallback)",
+  "url": "https://data.nasa.gov/docs/legacy/meteorite_landings/Meteorite_Landings.csv",
+  "landing_page": "https://www.lpi.usra.edu/meteor/metbull.php",
+  "retrieval_date": "2026-07-08",
+  "sha256": "5b4c6a3596f177b3fe8b722e8a7e5f98f05628fe2167ec3bd007acdeb77036b5",
+  "raw_file": "data/raw/metbull/Meteorite_Landings_2026-07-08.csv",
+  "row_count": 45716,
+  "rows_before_dedup": 45716,
+  "dedup_dropped": 0,
+  "dedup_rule": "drop_duplicates on metbull_name, keep first",
+  "falls": 1107,
+  "finds": 44609,
+  "staleness": "NASA Open Data 'Meteorite Landings' is a frozen snapshot of the Meteoritical Bulletin; latest year present is 2101. The live MetBull DB holds ~80,000+ entries as of 2026, so this fallback lags by roughly a decade / tens of thousands of entries. The live search is behind a Cloudflare JS challenge that cannot be passed non-interactively from the VPS; a Phase-D refresh needs a browser-driven or licensed export.",
+  "missing_columns": {
+    "metbull_country": "not present in the NASA export; nulled here"
+  },
+  "group_map_additions": [
+    {
+      "raw": "Acapulcoite/Lodranite",
+      "canonical": "lodranite-acapulcoite"
+    },
+    {
+      "raw": "Acapulcoite/lodranite",
+      "canonical": "lodranite-acapulcoite"
+    },
+    {
+      "raw": "Aubrite-an",
+      "canonical": "aubrite"
+    },
+    {
+      "raw": "C",
+      "canonical": "C-ungrouped"
+    },
+    {
+      "raw": "C1-ung",
+      "canonical": "C-ungrouped"
+    },
+    {
+      "raw": "C1/2-ung",
+      "canonical": "C-ungrouped"
+    },
+    {
+      "raw": "C2",
+      "canonical": "C-ungrouped"
+    },
+    {
+      "raw": "C3-ung",
+      "canonical": "C-ungrouped"
+    },
+    {
+      "raw": "C3.0-ung",
+      "canonical": "C-ungrouped"
+    },
+    {
+      "raw": "C3/4-ung",
+      "canonical": "C-ungrouped"
+    },
+    {
+      "raw": "C4",
+      "canonical": "C-ungrouped"
+    },
+    {
+      "raw": "C4/5",
+      "canonical": "C-ungrouped"
+    },
+    {
+      "raw": "C5/6-ung",
+      "canonical": "C-ungrouped"
+    },
+    {
+      "raw": "C6",
+      "canonical": "C-ungrouped"
+    },
+    {
+      "raw": "CH/CBb",
+      "canonical": "CH"
+    },
+    {
+      "raw": "CK",
+      "canonical": "CK"
+    },
+    {
+      "raw": "CK3-an",
+      "canonical": "CK"
+    },
+    {
+      "raw": "CK3.8",
+      "canonical": "CK"
+    },
+    {
+      "raw": "CK3/4",
+      "canonical": "CK"
+    },
+    {
+      "raw": "CK4-an",
+      "canonical": "CK"
+    },
+    {
+      "raw": "CK4/5",
+      "canonical": "CK"
+    },
+    {
+      "raw": "CK5/6",
+      "canonical": "CK"
+    },
+    {
+      "raw": "CM-an",
+      "canonical": "CM"
+    },
+    {
+      "raw": "CM1/2",
+      "canonical": "CM"
+    },
+    {
+      "raw": "CM2-an",
+      "canonical": "CM"
+    },
+    {
+      "raw": "CO3.0",
+      "canonical": "CO"
+    },
+    {
+      "raw": "CO3.1",
+      "canonical": "CO"
+    },
+    {
+      "raw": "CO3.2",
+      "canonical": "CO"
+    },
+    {
+      "raw": "CO3.3",
+      "canonical": "CO"
+    },
+    {
+      "raw": "CO3.4",
+      "canonical": "CO"
+    },
+    {
+      "raw": "CO3.5",
+      "canonical": "CO"
+    },
+    {
+      "raw": "CO3.7",
+      "canonical": "CO"
+    },
+    {
+      "raw": "CR",
+      "canonical": "CR"
+    },
+    {
+      "raw": "CR-an",
+      "canonical": "CR"
+    },
+    {
+      "raw": "CR1",
+      "canonical": "CR"
+    },
+    {
+      "raw": "CR2-an",
+      "canonical": "CR"
+    },
+    {
+      "raw": "CR7",
+      "canonical": "CR"
+    },
+    {
+      "raw": "CV2",
+      "canonical": "CV"
+    },
+    {
+      "raw": "CV3-an",
+      "canonical": "CV"
+    },
+    {
+      "raw": "Chondrite-fusion crust",
+      "canonical": "CH"
+    },
+    {
+      "raw": "Chondrite-ung",
+      "canonical": "CH"
+    },
+    {
+      "raw": "Diogenite-an",
+      "canonical": "diogenite"
+    },
+    {
+      "raw": "Diogenite-olivine",
+      "canonical": "diogenite"
+    },
+    {
+      "raw": "Diogenite-pm",
+      "canonical": "diogenite"
+    },
+    {
+      "raw": "E",
+      "canonical": "E"
+    },
+    {
+      "raw": "E3-an",
+      "canonical": "E"
+    },
+    {
+      "raw": "E4",
+      "canonical": "E"
+    },
+    {
+      "raw": "E5",
+      "canonical": "E"
+    },
+    {
+      "raw": "E5-an",
+      "canonical": "E"
+    },
+    {
+      "raw": "E6",
+      "canonical": "E"
+    },
+    {
+      "raw": "EH-imp melt",
+      "canonical": "EH"
+    },
+    {
+      "raw": "EH3/4-an",
+      "canonical": "EH"
+    },
+    {
+      "raw": "EH4/5",
+      "canonical": "EH"
+    },
+    {
+      "raw": "EH6",
+      "canonical": "EH"
+    },
+    {
+      "raw": "EH6-an",
+      "canonical": "EH"
+    },
+    {
+      "raw": "EH7",
+      "canonical": "EH"
+    },
+    {
+      "raw": "EH7-an",
+      "canonical": "EH"
+    },
+    {
+      "raw": "EL-melt rock",
+      "canonical": "EL"
+    },
+    {
+      "raw": "EL3/4",
+      "canonical": "EL"
+    },
+    {
+      "raw": "EL4/5",
+      "canonical": "EL"
+    },
+    {
+      "raw": "EL6/7",
+      "canonical": "EL"
+    },
+    {
+      "raw": "EL7",
+      "canonical": "EL"
+    },
+    {
+      "raw": "Enst achon",
+      "canonical": "E"
+    },
+    {
+      "raw": "Enst achon-ung",
+      "canonical": "E"
+    },
+    {
+      "raw": "Eucrite-Mg rich",
+      "canonical": "eucrite"
+    },
+    {
+      "raw": "Eucrite-an",
+      "canonical": "eucrite"
+    },
+    {
+      "raw": "Eucrite-br",
+      "canonical": "eucrite"
+    },
+    {
+      "raw": "Eucrite-cm",
+      "canonical": "eucrite"
+    },
+    {
+      "raw": "Eucrite-mmict",
+      "canonical": "eucrite"
+    },
+    {
+      "raw": "Eucrite-pmict",
+      "canonical": "eucrite"
+    },
+    {
+      "raw": "Eucrite-unbr",
+      "canonical": "eucrite"
+    },
+    {
+      "raw": "H",
+      "canonical": "H"
+    },
+    {
+      "raw": "H-an",
+      "canonical": "H"
+    },
+    {
+      "raw": "H-imp melt",
+      "canonical": "H"
+    },
+    {
+      "raw": "H-melt breccia",
+      "canonical": "H"
+    },
+    {
+      "raw": "H-melt rock",
+      "canonical": "H"
+    },
+    {
+      "raw": "H-metal",
+      "canonical": "H"
+    },
+    {
+      "raw": "H/L3",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "H/L3-4",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "H/L3.5",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "H/L3.6",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "H/L3.7",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "H/L3.9",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "H/L4",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "H/L4-5",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "H/L4/5",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "H/L5",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "H/L6",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "H/L6-melt rock",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "H/L~4",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "H3-4",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3-5",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3-6",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3-an",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.0",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.0-3.4",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.05",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.1",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.10",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.15",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.2-3.7",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.2-6",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.2-an",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.4-5",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.4/3.5",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.5-4",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.6-6",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.7-5",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.7-6",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.7/3.8",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.8-4",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.8-5",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.8-6",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.8-an",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.8/3.9",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.8/4",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.9-5",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.9-6",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3.9/4",
+      "canonical": "H"
+    },
+    {
+      "raw": "H3/4",
+      "canonical": "H"
+    },
+    {
+      "raw": "H4(?)",
+      "canonical": "H"
+    },
+    {
+      "raw": "H4-5",
+      "canonical": "H"
+    },
+    {
+      "raw": "H4-6",
+      "canonical": "H"
+    },
+    {
+      "raw": "H4-an",
+      "canonical": "H"
+    },
+    {
+      "raw": "H4-melt breccia",
+      "canonical": "H"
+    },
+    {
+      "raw": "H4/5",
+      "canonical": "H"
+    },
+    {
+      "raw": "H4/6",
+      "canonical": "H"
+    },
+    {
+      "raw": "H5-6",
+      "canonical": "H"
+    },
+    {
+      "raw": "H5-7",
+      "canonical": "H"
+    },
+    {
+      "raw": "H5-an",
+      "canonical": "H"
+    },
+    {
+      "raw": "H5-melt breccia",
+      "canonical": "H"
+    },
+    {
+      "raw": "H5/6",
+      "canonical": "H"
+    },
+    {
+      "raw": "H6-melt breccia",
+      "canonical": "H"
+    },
+    {
+      "raw": "H6/7",
+      "canonical": "H"
+    },
+    {
+      "raw": "H7",
+      "canonical": "H"
+    },
+    {
+      "raw": "Howardite-an",
+      "canonical": "howardite"
+    },
+    {
+      "raw": "Iron",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IAB complex",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IAB-MG",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IAB-an",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IAB-sHH",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IAB-sHL",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IAB-sHL-an",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IAB-sLH",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IAB-sLL",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IAB-sLM",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IAB-ung",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IAB?",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IC",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IC-an",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IIAB",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IIAB-an",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IIC",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IID",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IID-an",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IIE",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IIE-an",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IIE?",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IIF",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IIG",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IIIAB",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IIIAB-an",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IIIAB?",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IIIE",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IIIE-an",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IIIF",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IVA",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IVA-an",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, IVB",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron, ungrouped",
+      "canonical": "iron"
+    },
+    {
+      "raw": "Iron?",
+      "canonical": "iron"
+    },
+    {
+      "raw": "K",
+      "canonical": "K"
+    },
+    {
+      "raw": "K3",
+      "canonical": "K"
+    },
+    {
+      "raw": "L-imp melt",
+      "canonical": "L"
+    },
+    {
+      "raw": "L-melt breccia",
+      "canonical": "L"
+    },
+    {
+      "raw": "L-melt rock",
+      "canonical": "L"
+    },
+    {
+      "raw": "L-metal",
+      "canonical": "L"
+    },
+    {
+      "raw": "L/LL",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL(?)3",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL-melt rock",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL3",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL3-5",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL3-6",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL3.10",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL3.2",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL3.4",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL3.5",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL3.6/3.7",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL4-6",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL4/5",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL5-6",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL5/6",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL6",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL6-an",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL~4",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL~5",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L/LL~6",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "L3-4",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3-5",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3-6",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3-7",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3-melt breccia",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.0-3.7",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.0-3.9",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.00",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.05",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.10",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.2-3.5",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.2-3.6",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.3-3.5",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.3-3.6",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.3-3.7",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.4-3.7",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.5-3.7",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.5-3.8",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.5-3.9",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.5-5",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.6-4",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.7-3.9",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.7-4",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.7-6",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.7/3.8",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.8-5",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.8-6",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.8-an",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.9-5",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.9-6",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3.9/4",
+      "canonical": "L"
+    },
+    {
+      "raw": "L3/4",
+      "canonical": "L"
+    },
+    {
+      "raw": "L4-5",
+      "canonical": "L"
+    },
+    {
+      "raw": "L4-6",
+      "canonical": "L"
+    },
+    {
+      "raw": "L4-an",
+      "canonical": "L"
+    },
+    {
+      "raw": "L4-melt breccia",
+      "canonical": "L"
+    },
+    {
+      "raw": "L4-melt rock",
+      "canonical": "L"
+    },
+    {
+      "raw": "L4/5",
+      "canonical": "L"
+    },
+    {
+      "raw": "L5-6",
+      "canonical": "L"
+    },
+    {
+      "raw": "L5-7",
+      "canonical": "L"
+    },
+    {
+      "raw": "L5-melt breccia",
+      "canonical": "L"
+    },
+    {
+      "raw": "L5/6",
+      "canonical": "L"
+    },
+    {
+      "raw": "L6-melt breccia",
+      "canonical": "L"
+    },
+    {
+      "raw": "L6-melt rock",
+      "canonical": "L"
+    },
+    {
+      "raw": "L6/7",
+      "canonical": "L"
+    },
+    {
+      "raw": "L7",
+      "canonical": "L"
+    },
+    {
+      "raw": "LL",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL-imp melt",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL-melt breccia",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL-melt rock",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL3-4",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL3-5",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL3-6",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL3.0",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL3.00",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL3.05",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL3.1-3.5",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL3.10",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL3.15",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL3.7-6",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL3.8-4",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL3.8-6",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL3.9",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL3.9/4",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL3/4",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL4-5",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL4-6",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL4/5",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL4/6",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL5-6",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL5-7",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL5/6",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL6(?)",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL6-an",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL6-melt breccia",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL6/7",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL7",
+      "canonical": "LL"
+    },
+    {
+      "raw": "LL7(?)",
+      "canonical": "LL"
+    },
+    {
+      "raw": "Lodranite-an",
+      "canonical": "lodranite-acapulcoite"
+    },
+    {
+      "raw": "Lunar",
+      "canonical": "lunar-meteorite"
+    },
+    {
+      "raw": "Lunar (anorth)",
+      "canonical": "lunar-meteorite"
+    },
+    {
+      "raw": "Lunar (bas. breccia)",
+      "canonical": "lunar-meteorite"
+    },
+    {
+      "raw": "Lunar (bas/anor)",
+      "canonical": "lunar-meteorite"
+    },
+    {
+      "raw": "Lunar (bas/gab brec)",
+      "canonical": "lunar-meteorite"
+    },
+    {
+      "raw": "Lunar (basalt)",
+      "canonical": "lunar-meteorite"
+    },
+    {
+      "raw": "Lunar (feldsp. breccia)",
+      "canonical": "lunar-meteorite"
+    },
+    {
+      "raw": "Lunar (gabbro)",
+      "canonical": "lunar-meteorite"
+    },
+    {
+      "raw": "Lunar (norite)",
+      "canonical": "lunar-meteorite"
+    },
+    {
+      "raw": "Martian",
+      "canonical": "martian"
+    },
+    {
+      "raw": "Martian (OPX)",
+      "canonical": "martian"
+    },
+    {
+      "raw": "Martian (basaltic breccia)",
+      "canonical": "martian"
+    },
+    {
+      "raw": "Martian (chassignite)",
+      "canonical": "martian"
+    },
+    {
+      "raw": "Martian (nakhlite)",
+      "canonical": "martian"
+    },
+    {
+      "raw": "Martian (shergottite)",
+      "canonical": "martian"
+    },
+    {
+      "raw": "Mesosiderite-A",
+      "canonical": "mesosiderite"
+    },
+    {
+      "raw": "Mesosiderite-A1",
+      "canonical": "mesosiderite"
+    },
+    {
+      "raw": "Mesosiderite-A2",
+      "canonical": "mesosiderite"
+    },
+    {
+      "raw": "Mesosiderite-A3",
+      "canonical": "mesosiderite"
+    },
+    {
+      "raw": "Mesosiderite-A3/4",
+      "canonical": "mesosiderite"
+    },
+    {
+      "raw": "Mesosiderite-A4",
+      "canonical": "mesosiderite"
+    },
+    {
+      "raw": "Mesosiderite-B",
+      "canonical": "mesosiderite"
+    },
+    {
+      "raw": "Mesosiderite-B1",
+      "canonical": "mesosiderite"
+    },
+    {
+      "raw": "Mesosiderite-B2",
+      "canonical": "mesosiderite"
+    },
+    {
+      "raw": "Mesosiderite-B4",
+      "canonical": "mesosiderite"
+    },
+    {
+      "raw": "Mesosiderite-C",
+      "canonical": "mesosiderite"
+    },
+    {
+      "raw": "Mesosiderite-C2",
+      "canonical": "mesosiderite"
+    },
+    {
+      "raw": "Mesosiderite-an",
+      "canonical": "mesosiderite"
+    },
+    {
+      "raw": "Mesosiderite?",
+      "canonical": "mesosiderite"
+    },
+    {
+      "raw": "OC",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "OC3",
+      "canonical": "OC-ung"
+    },
+    {
+      "raw": "Pallasite, PES",
+      "canonical": "pallasite"
+    },
+    {
+      "raw": "Pallasite, PMG",
+      "canonical": "pallasite"
+    },
+    {
+      "raw": "Pallasite, PMG-an",
+      "canonical": "pallasite"
+    },
+    {
+      "raw": "Pallasite, ungrouped",
+      "canonical": "pallasite"
+    },
+    {
+      "raw": "Pallasite?",
+      "canonical": "pallasite"
+    },
+    {
+      "raw": "R",
+      "canonical": "R"
+    },
+    {
+      "raw": "R3",
+      "canonical": "R"
+    },
+    {
+      "raw": "R3-4",
+      "canonical": "R"
+    },
+    {
+      "raw": "R3-5",
+      "canonical": "R"
+    },
+    {
+      "raw": "R3-6",
+      "canonical": "R"
+    },
+    {
+      "raw": "R3.4",
+      "canonical": "R"
+    },
+    {
+      "raw": "R3.5-4",
+      "canonical": "R"
+    },
+    {
+      "raw": "R3.5-6",
+      "canonical": "R"
+    },
+    {
+      "raw": "R3.7",
+      "canonical": "R"
+    },
+    {
+      "raw": "R3.8-5",
+      "canonical": "R"
+    },
+    {
+      "raw": "R3.8-6",
+      "canonical": "R"
+    },
+    {
+      "raw": "R3.9",
+      "canonical": "R"
+    },
+    {
+      "raw": "R3/4",
+      "canonical": "R"
+    },
+    {
+      "raw": "R4/5",
+      "canonical": "R"
+    },
+    {
+      "raw": "R5",
+      "canonical": "R"
+    },
+    {
+      "raw": "Ureilite-an",
+      "canonical": "ureilite"
+    },
+    {
+      "raw": "Ureilite-pmict",
+      "canonical": "ureilite"
+    }
+  ],
+  "citation": "Meteoritical Society, Meteoritical Bulletin Database; distributed as NASA Open Data 'Meteorite Landings' (data.nasa.gov).",
+  "license_terms": "NASA Open Data (U.S. Government, public domain). Underlying data (c) The Meteoritical Society."
+}

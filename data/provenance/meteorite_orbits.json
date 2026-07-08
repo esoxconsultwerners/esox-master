@@ -1,0 +1,12 @@
+{
+  "source": "meteoriteorbits.info (M. M. M. Meier, curated compilation)",
+  "url": "https://www.meteoriteorbits.info",
+  "retrieval_date": "2026-07-08",
+  "sha256": "9159470446a218da8538038762b2b05804672621684047fa015133c4d7aac8f5",
+  "raw_file": "data/raw/meteorite_orbits/meteoriteorbits_2026-07-08.html",
+  "row_count": 60,
+  "reference_legend_size": 59,
+  "note": "Central orbital-element values parsed from the HTML table; per-row uncertainties in the source are dropped. Every event carries a morb_orbit_ref (reference code expanded via the page's legend). The table is the version-of-record for observed-fall orbits; a Phase-D refresh re-scrapes it (retrieval date = version).",
+  "citation": "Meier M.M.M., meteoriteorbits.info; individual orbits credited per-row in morb_orbit_ref (original literature).",
+  "license_terms": "Compilation (c) M.M.M. Meier, used with per-event attribution to the primary literature. Not redistributed as bulk; derived orbital elements only."
+}

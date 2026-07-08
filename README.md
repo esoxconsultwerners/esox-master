@@ -41,8 +41,8 @@ publishes only derived tables.
 | A5b | Taxonomy labels | PDS Asteroid Taxonomy V1.1 (doi:10.26033/e1p3-xm59) | done |
 | A6 | Accessibility & risk | JPL NHATS + ESA NEOCC risk list + JPL Sentry (living lists, retrieval date = version) | done |
 | A7 | Lab spectra (reference set) | RELAB PDS4 bundle (urn:nasa:pds:relab, PDS Geosciences Node) — never merged with the asteroid catalog | done |
-| A8 | Binaries, pairs & satellites | Johnston / literature | planned |
-| A9 | Accessibility & close approaches | NHATS / CNEOS | planned |
+| A8 | Meteorite census + orbits | MetBull (NASA Open Data fallback) + meteoriteorbits.info + CNEOS fireballs | done |
+| A9 | Spin & shape models | DAMIT | planned |
 
 (Planned names are the current roadmap and may be refined per package.)
 

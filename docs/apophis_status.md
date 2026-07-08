@@ -22,3 +22,8 @@ AP_A2 onward; this file collects the findings per package.
 Next expected touchpoints: A6 (NHATS/NEOCC risk data — Apophis should
 appear), Phase C1 (RELAB validation), Phase C4 (ML classifier ground
 truth: the MITHNEOS NIR spectra are the anchor).
+
+## AP_A8 (Meteoritical Bulletin + orbits, 2026-07-08)
+
+- LL falls fraction: **8.6%** of classified MetBull falls (91/1063) are LL chondrites. This is the base rate behind the Apophis Sq<->LL story: Apophis is an Sq-type, and Sq is the spectral bridge to LL ordinary chondrites - the most probable meteorite analogue. LL is a minority of falls, so a delivered Apophis fragment would be a comparatively rare, diagnostic sample.
+- Observed-fall orbits with published references: 60 events (incl. Chelyabinsk LL5, source region traceable per row).
