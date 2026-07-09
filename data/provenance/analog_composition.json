@@ -1,17 +1,24 @@
 {
   "columns": [
     "analog_group_top",
+    "analog_top_soft",
     "analog_group_conf",
     "analog_distribution",
     "oc_subgroup",
     "analog_status",
+    "analog_manifold_d2",
+    "analog_evidence",
     "weathering_strength",
     "weathering_flag",
     "inferred_grain_density_range",
     "inferred_porosity_note",
     "properties_source"
   ],
-  "kind": "MODEL-DERIVED from RELAB meteorite templates (resampled to the 16 Gaia bands under the documented 44 nm Gaussian bandpass approximation). Distinct from measured quantities; the inferred physical properties are ANALOG-inferred group-typical literature ranges, not per-object measurements.",
+  "kind": "MODEL-DERIVED from RELAB meteorite templates (resampled to the 16 Gaia bands under the documented 44 nm Gaussian bandpass approximation; edge bands 374/1034 nm dropped for matching). Distinct from measured quantities.",
+  "matcher": "C2.5 shared-covariance Gaussian (per-group centroid + one pooled Ledoit-Wolf covariance -> Mahalanobis; uniform class priors so template count cannot win; temperature-scaled, isotonic-calibrated). Replaces the C2 RandomForest, which was a template-density catch-all (diag/C25_MATCHER_FINDING.md). self-CV bal_acc 0.508, ECE 0.198, T 2.0.",
+  "honesty_policy": "The Gaia DR3 asteroid-reflectance core sits ~8x beyond the RELAB manifold (median Mahalanobis d2 ~189 vs RELAB q95 23.1); a rigid de-bias does not close it. Confident Gaia-only meteorite-group analogs are therefore NOT honestly supportable. analog_status is overwhelmingly 'unresolved'; the soft analog_distribution is an INDICATOR ONLY; 'ok' is emitted only inside the RELAB manifold (d2<=q95) and above conf threshold. Primary composition product is complex-level taxon_esox (C4). confident 'ok' fraction 0.08%.",
+  "manifold_gate_q95_d2": 23.086,
+  "confidence_threshold": 0.55,
   "separable_subset": [
     "CM",
     "CR",
@@ -37,10 +44,6 @@
     "mesosiderite",
     "pallasite"
   ],
-  "oc_policy": "H/L/LL merged into ordinary_chondrite; oc_subgroup always 'unresolved' (C1: mutually ~0.72 AUC, not spectrally resolvable)",
-  "prior": "C4 taxon_esox complex used as prior (implausible analogs down-weighted x0.25); flat where unclassified. Mean entropy reduction 0.083",
-  "relab_self_cv_balanced_accuracy": 0.332,
-  "reliability_ece": 0.042,
-  "confidence_threshold": 0.55,
-  "resampling_note": "same 44 nm Gaussian bandpass approximation as C1/C4"
+  "oc_policy": "H/L/LL merged into ordinary_chondrite; oc_subgroup always 'unresolved'",
+  "external_nir_path": "confident analogs for objects with ground-truth NIR spectra (Apophis etc.) come via c2_composition.match_external_spectrum; migrating that path to the C2.5 matcher is a documented follow-up."
 }
