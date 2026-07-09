@@ -56,3 +56,7 @@ Via C1.4: Apophis has no Gaia spectrum, so its composition analog is recovered f
 
 Via C2 (external-spectrum path, nir-7band): Apophis analog distribution top **ordinary_chondrite** (conf 0.56), ordinary-chondrite mass 0.56. Per C1 honesty, the ordinary-chondrite subgroup is reported **unresolved** (H/L/LL are not separable at Gaia/NIR resolution) - Apophis gets 'ordinary chondrite, subgroup unresolved', not 'LL'.
 
+
+## Composition analog (C2.6 migrated, manifold-gated)
+
+Via the migrated external path (C2.5 per-group matcher + manifold gate, nir-6band): Apophis is **INSIDE the RELAB NIR manifold** (Mahalanobis d2 0.54 vs q95 13.41 - a gate that rejects ~95% of the Gaia core), with **ordinary chondrite** the leading indicated analog. But calibrated confidence (0.18) is below the 0.55 threshold - the NIR-truncated spectrum does not confidently discriminate OC from ureilite/CV - so the honest verdict is **indicative ordinary chondrite, unresolved**, NOT a confident analog. This supersedes the earlier RandomForest line (conf 0.56, density-catch-all overconfidence). oc_subgroup remains unresolved (H/L/LL not separable). The in-manifold result means Apophis passes a domain-validity test that 95% of Gaia-core objects fail - the spectrum is meteorite-like; it just is not single-group-resolvable at this NIR resolution.

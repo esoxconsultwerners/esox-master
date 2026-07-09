@@ -45,5 +45,5 @@
     "pallasite"
   ],
   "oc_policy": "H/L/LL merged into ordinary_chondrite; oc_subgroup always 'unresolved'",
-  "external_nir_path": "confident analogs for objects with ground-truth NIR spectra (Apophis etc.) come via c2_composition.match_external_spectrum; migrating that path to the C2.5 matcher is a documented follow-up."
+  "external_nir_path": "MIGRATED (C2.6): match_external_spectrum uses the C2.5 per-group matcher + RELAB-manifold gate (c26_external); the RandomForest external path is retired for composition. NIR ground-truth measured 93.7% inside the RELAB NIR manifold (self-q95 d2 13.41), median d2 1.5 - domain-valid, unlike the ~5%-inside Gaia core. Confident NIR analogs: 5 (all HED). Apophis d2 0.54 inside -> indicative OC, unresolved. Follow-up: full-NIR-range (to 2.5um) matcher beyond the Gaia grid would raise NIR confidence."
 }

@@ -156,32 +156,12 @@ def _ensure_matchers():
 
 
 def match_external_spectrum(wl_nm, refl, complex_label=None):
-    """Analog distribution for ANY external spectrum (Apophis, customer targets).
-    Uses the full 16-band matcher when the visible (incl. 550 nm) is covered,
-    else the NIR-restricted matcher (reproduces the C1.4 Apophis path)."""
-    _ensure_matchers()
-    wl_nm = np.asarray(wl_nm, float); refl = np.asarray(refl, float)
-    v16 = cc.gaussian_resample(wl_nm, refl, cc.BANDS)
-    ri = cc.BANDS.index(cc.REF_NM)
-    # Full 16-band matcher when 550 nm is covered and most bands present (RF
-    # handles the few uncovered bands as NaN natively); else the NIR matcher.
-    if np.isfinite(v16[ri]) and v16[ri] and np.isfinite(v16).sum() >= 10:
-        clf, classes = _FULL
-        x = (v16 / v16[ri]).reshape(1, -1)
-        path = "full-16band"
-    else:
-        clf, classes = _NIR
-        vn = cc.gaussian_resample(wl_nm, refl, NIR_BANDS)
-        rn = NIR_BANDS.index(NIR_REF)
-        x = (vn / vn[rn]).reshape(1, -1)
-        path = "nir-7band"
-    proba = clf.predict_proba(x)[0]
-    post, _ = apply_prior(proba, classes, complex_label)
-    dist = {c: float(p) for c, p in zip(classes, post)}
-    top = max(dist, key=dist.get)
-    oc_mass = sum(p for c, p in dist.items() if c == OC_LABEL)
-    return {"path": path, "top": top, "top_conf": dist[top],
-            "oc_mass": float(oc_mass), "distribution": dist}
+    """External-spectrum composition (C2.6 migration): delegates to the C2.5
+    per-group matcher + RELAB-manifold gate in c26_external. The RandomForest
+    external path is RETIRED for composition; taxon_esox/C4 is a separate
+    classifier and is untouched."""
+    from c26_external import match_external_spectrum as _mx
+    return _mx(wl_nm, refl, complex_label)
 
 
 def main():
