@@ -1,0 +1,13 @@
+{
+  "nir_selfq95": 13.41,
+  "nir_selfd2_mean": 3.35,
+  "n_nir_gt": 268,
+  "nir_inside_frac_pct": 93.7,
+  "nir_median_d2": 1.5,
+  "apophis_d2": 0.54,
+  "apophis_inside": true,
+  "nir_balacc": 0.407,
+  "nir_ece": 0.216,
+  "nir_T": 1.5,
+  "n_confident_nir": 5
+}
