@@ -1,0 +1,15 @@
+{
+  "matcher_selfcv_balacc": 0.508,
+  "matcher_ece": 0.198,
+  "temperature": 2.0,
+  "relab_ingroup_d2_mean": 6.8,
+  "relab_q95": 23.1,
+  "core_min_d2_median": 188.8,
+  "core_within_q95_pct": 5.3,
+  "rf_confident": 2286,
+  "rf_cm_frac_pct": 97.0,
+  "newmatcher_relative_cm_frac_pct": 1.2,
+  "newmatcher_relative_confident": 6251,
+  "newmatcher_oodgated_confident": 15,
+  "newmatcher_oodgated_cm": 0
+}
