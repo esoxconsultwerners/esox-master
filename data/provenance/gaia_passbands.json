@@ -1,0 +1,17 @@
+{
+  "artifact": "Gaia (E)DR3 photometric passbands",
+  "file": "data/raw/gaia_passbands/GaiaEDR3_passbands_zeropoints_version2/passband.dat",
+  "source_url": "https://www.cosmos.esa.int/documents/29201/4226701/GaiaEDR3_passbands_zeropoints.zip",
+  "landing_page": "https://www.cosmos.esa.int/web/gaia/dr3-passbands",
+  "reference": "Riello et al. 2021, A&A 649, A3 (2021A&A...649A...3R); CDS J/A+A/649/A3",
+  "version": "version2 (revised EDR3 passbands)",
+  "is_dr3_photometric_system": "yes - the EDR3 passbands are the photometric system carried into Gaia DR3 (not DR2)",
+  "date_accessed": "2026-07-09",
+  "zip_sha256": "d22a1d765a2e3e6815a9cb7e9bf0cf999c4bd1473148c0b031e57e6aac0e3b8f",
+  "passband_dat_sha256": "46160d3b84dc0b78530d1ef3d18c0cf632fdaeb27876c0773c7a62033127f301",
+  "columns": "lambda_nm, GPb, e_GPb, BPPb, e_BPPb, RPPb, e_RPPb (99.99 = undefined)",
+  "wavelength_grid_nm": "320-1100 at 1 nm steps, 781 rows",
+  "CAVEAT": "This file provides THREE broadband integrated response curves (G, BP, RP). It does NOT provide per-band responses for the 16 GASP asteroid-reflectance sample wavelengths (374-1034 nm, Galluccio+2023 DR3 SSO product). It therefore cannot be used to resample a lab spectrum onto the 16-band GASP grid (3 broadband curves -> cannot produce a 16-element vector). See analysis/c2_composition/diag/PASSBAND_FINDING.md.",
+  "used_in_pipeline": false,
+  "status": "acquired and verified; NOT wired into resampling pending Werner decision (see finding)"
+}
